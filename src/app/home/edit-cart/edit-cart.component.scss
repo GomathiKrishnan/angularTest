@@ -1,0 +1,47 @@
+.plus-btn{
+    width: 30px;
+    justify-content: center;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background: #DB3529;
+    color: #e7e7e7;
+    i{
+        font-size: 20px;
+    }
+}
+
+.input-field{
+    input{
+        width: 100px;
+        border: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    input:focus {
+        outline: none !important;
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0; 
+    }
+}
+
+.premium-btn{
+    button{
+        height: 40px;
+        width: 100%;
+        background: #DB3529;
+        border: none;
+        border-radius: 7px;
+        box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #e7e7e7;
+    }
+}

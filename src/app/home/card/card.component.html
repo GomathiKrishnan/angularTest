@@ -1,0 +1,14 @@
+<div>
+    <div class="food-card p-3 d-flex justify-content-between flex-column align-items-center">
+        <div> {{ticketType.value.ticketName}} </div>
+        <div class="input-field d-flex justify-content-around align-items-center">
+            <div class="plus-btn" (click)="counter(1)">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <input type="number" (keypress)="numericOnly($event)" [formControl]="ticketCount" (blur)="!ticketCount.value ? ticketCount.setValue(0):ticketCount.value" readonly>
+            <div class="plus-btn" (click)="counter(0)">
+                <i class="fa-solid fa-minus"></i>
+            </div>
+        </div>
+    </div>
+</div>

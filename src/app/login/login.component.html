@@ -1,0 +1,22 @@
+<main class="main">
+    <div class="container">
+      <section class="wrapper">
+        <div class="heading">
+          <h1 class="text text-large">Sign In</h1>
+          <p class="text text-normal">New user? <span><a class="text text-links">Create an account</a></span>
+          </p>
+        </div>
+        <form class="form" [formGroup]="loginCredential">
+          <div class="input-control">
+            <input type="email" class="input-field" placeholder="Email Address" autocomplete="off" formControlName="email">
+          </div>
+          <div class="input-control">
+            <input type="password" class="input-field" placeholder="Password" autocomplete="new-password" formControlName="password">
+          </div>
+          <div class="input-control justify-content-center">
+           <button class="sign-in-btn"  (click)="submit()">Sign In</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>

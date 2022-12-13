@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="header d-flex justify-content-center">
+        <div>Ticket Booking</div>
+    </div>
+    <div class="profile d-flex justify-content-center align-items-center flex-column gap-4">
+        <div class="outer-circle rounded-circle d-flex justify-content-center align-items-center">
+            <div class="profile-circle">
+                <img src="assets/profile.jpg" class="rounded-circle">
+            </div>
+        </div>
+        <div class="name text-center">
+            <div>Prakash</div>
+            <div>Software Developer</div>
+            <div class="shop-cart rounded-pill border border-light border-3 pt-1 m-auto mt-3 d-flex justify-content-evenly align-items-center">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>37</span>
+            </div>
+        </div>
+    </div>
+    <div class="menu d-flex align-items-center flex-column p-3">
+        <div class="d-flex align-items-center gap-3 menu-list ms-5" *ngFor="let item of menuItems">
+            <i class="{{item.icon}}"></i>
+            <p class="menu-name">{{item.name}}</p>
+        </div>
+    </div>
+    <div class="footer p-2">
+        <div class="d-flex gap-3 ms-5" (click)="toggle()">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <p class="menu-name">Edit Cart</p>
+        </div>
+    </div>
+</div>

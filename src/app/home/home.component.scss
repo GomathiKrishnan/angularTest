@@ -1,0 +1,19 @@
+.mat-sidenav{
+    width: 25%;
+}
+
+.main-container{
+    background-color: #FCF4F0;
+    display: grid;
+    grid-template-rows:90% 10%;
+    .sub-container{
+        display: grid;
+        grid-template-rows: 20% 70%;
+        .card-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-rows: 75%;
+            overflow-y: auto;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+<mat-drawer-container autosize >
+    <mat-drawer #drawer class="mat-sidenav" mode="over" position="end">
+      <div>
+        <app-edit-cart [ticketControls]="ticketArrayControls"></app-edit-cart>
+      </div>
+    </mat-drawer>
+  
+    <mat-drawer-content>
+      <ng-container *ngTemplateOutlet="mainContainer"></ng-container>
+    </mat-drawer-content>
+  
+  </mat-drawer-container>
+  
+  <ng-template #mainContainer>
+    <div>
+      <div class="px-0 mx-0 row">
+        <div class="px-0 col-2">
+          <app-sidenav></app-sidenav>
+        </div>
+        <div class="col-10 main-container px-0">
+          <div class="px-5 sub-container">
+            <app-header></app-header>
+            <div class="row card-container">
+              <ng-container *ngFor="let item of ticketArrayControls; let i = index" >
+                <app-card class="col-3" [ticketType]="item" [ticketDetail]="ticketDetails[i]"></app-card>
+              </ng-container>
+            </div>
+          </div>
+          <app-footer [ticketControl]="ticketControls"></app-footer>
+        </div>
+      </div>
+    </div>
+  </ng-template>

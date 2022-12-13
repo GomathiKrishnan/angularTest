@@ -1,0 +1,50 @@
+.container{
+    height: 100vh;
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.header{
+    padding: 10px;
+    height: 60px;
+}
+.profile{
+    position: relative;
+    height: 275px;
+    .outer-circle{
+        height: 40%;
+        width: 40%;
+        border: 3px solid #EC9462;
+        .profile-circle{
+            height: 85%;
+            width: 85%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .name{
+        .shop-cart{
+            box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+            background: #FDFFFF;
+            width: 50%;
+            i{
+                color:#DA3A2D
+            }
+        }
+    }
+}
+.menu {
+    .menu-list{
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        .menu-name{
+            margin: 0;
+        }
+    }
+}
+.footer{
+    width: 100%;
+}

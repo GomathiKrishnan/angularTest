@@ -1,0 +1,31 @@
+<main class="main">
+    <div class="container">
+      <section class="wrapper">
+        <div class="heading">
+          <h1 class="text text-large text-center">Sign Up</h1>
+        </div>
+        <form class="form" [formGroup]="userDetails">
+            <div class="input-control">
+                <label for="image" class="image"><i class="fa-solid fa-user" ></i></label>
+                <input type="file" id="image" hidden (change)="uploadImage($event)">
+            </div>  
+            <div class="input-control">
+                <input type="text" class="input-field" placeholder="Name" autocomplete="off" formControlName="name">
+            </div>
+            <div class="input-control">
+                <input type="email" class="input-field" placeholder="Email Address" autocomplete="false" value="" formControlName="email">
+            </div>
+            <div class="input-control">
+                <input type="password" class="input-field" placeholder="Password" autocomplete="new-password" value="" formControlName="password">
+            </div>
+            <div class="input-control">
+                <input type="password" class="input-field" placeholder="Confirm Password" autocomplete="off" formControlName="confirm_password">
+            </div>
+            <div class="input-control justify-content-between">
+                <a class="text text-links" >Back to Login</a>
+                <button class="sign-in-btn"  (click)="submit()">Sign Up</button>
+            </div>
+        </form>
+      </section>
+    </div>
+  </main>
